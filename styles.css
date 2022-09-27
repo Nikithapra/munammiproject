@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,400;0,500;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+  text-transform: capitalize;
+}
+body {
+  background-color: pink;
+}
+html {
+  font-size: 15px;
+}
+section {
+  min-height: 100vh;
+  padding: 1rem 10%;
+  padding-top: 8rem;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: palevioletred;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.2rem.3rem lightgrey;
+}
+
+header .logo img {
+  height: 6rem;
+}
+header .navigate ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+header .navigate ul li {
+  margin-left: 60px;
+  list-style: none;
+  display: inline-flex;
+  padding: 7px;
+}
+header .navigate ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+header .navigate ul li a:hover,
+header .navigate ul li a:hover.active {
+  color: black;
+  border-radius: 3px;
+}
+.sub-menu {
+  display: none;
+}
+header .navigate ul li:hover .sub-menu {
+  display: block;
+  margin-top: 15px;
+  margin-left: -15px;
+  position: absolute;
+}
+
+header .navigate ul li a:hover .sub-menu ul {
+  display: block;
+  margin: 10px;
+}
+header .navigate ul li a:hover .sub-menu ul li {
+  width: 150px;
+  padding: 10px;
+  margin: 10px;
+}
+
+header .navigate .sub-menu ul li a:hover {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*-----------------------home-----*/
+.home {
+  background: linear-gradient(rgba(214, 115, 115, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/imgc.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.home h1 {
+  padding-top: 20%;
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.2rem red;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.home p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.home-btn {
+  padding: 1rem 0;
+}
+.home-btn button {
+  width: 15rem;
+  padding: 1.5rem 0.7rem;
+  border: none;
+  border-radius: 0.6rcm;
+  font-size: 1.2rcm;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.1rcm;
+  color: white;
+  background-color: red;
+}
+.home-btn button i {
+  margin-left: 0.5rem;
+  font-size: 1rcm;
+  text-align: center;
+}
+/*---------about------------------*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(214, 115, 115, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/backg.jpg");
+}
+
+.about .about-content {
+  width: 200%;
+  height: 1200%;
+  padding: 9rem 2 rem;
+  box-shadow: 0 0.2rem 0.5rem red;
+  text-align: center;
+  background: palevioletred;
+
+  border-radius: 1rem;
+  border-width: 1rem;
+}
+.about-content h2 {
+  font-size: 2rem;
+  color: maroon;
+  padding: 0.5rem 1;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.2rcm 0.5rcm rgb(red, green, blue);
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: black;
+  text-align: center;
+}
+.about .image img {
+  width: 300%;
+  height: auto;
+}
+
+.about .image {
+  width: 29%;
+}
+.btn {
+  margin: 1rcm 0;
+  width: 10rcm;
+  padding: 0.6rcm;
+  border-radius: 0.5rcm;
+  border: none;
+  background: rgb(26, 24, 24);
+  color: orchid;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rcm;
+}
+/*------product--------------*/
+.title {
+  text-align: center;
+  font-size: 3rcm;
+  padding: 0.5rcm;
+  color: green;
+}
+.title span {
+  color: green;
+}
+
+.cake-product .inner-cake-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cake-product .inner-cake-col {
+  max-width: 300px;
+  background: white;
+  height: 27rcm;
+  flex: 1 1 20 rem;
+  padding: 1.2 rem;
+  margin: 1.5rem;
+  border-radius: 1rcm;
+  box-shadow: 0.3rcm 0.6rcm pink;
+  text-align: center;
+}
+.cake-product .inner-cake-col:hover {
+  transform: translateY(-1.5rem);
+  transition: 0.5sec;
+}
+.cake-product .inner-cake-col img {
+  height: 15rcm;
+  width: 100%;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cake-product .inner-cake-col .Cake-Price p {
+  position: absolute;
+  background: grey;
+  color: black;
+}
+.cake-star {
+  color: greenyellow;
+  position: relative;
+  margin-top: 0.8rem;
+}
+.cake-product .inner-cake-col h2 {
+  padding: 0.5rem 0;
+  color: blue;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+.cake-product .inner-cake-col h3 {
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.cake-product .inner-cake-col p {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+/*-----cupcakes---------------*/
+title {
+  text-align: center;
+  font-size: 3rcm;
+  padding: 0.5rcm;
+  color: green;
+}
+
+.cake-product .cupcake .inner-cake-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cake-product .cupcake .inner-cake-col {
+  max-width: 50%;
+  background: white;
+  height: 27rcm;
+  flex: 1 1 20 rem;
+  padding: 1.2 rem;
+  margin: 1.5rem;
+  border-radius: 1rcm;
+  box-shadow: 0.3rcm 0.6rcm pink;
+
+  text-align: center;
+}
+.cake-product .cupcake .inner-cake-col:hover {
+  transform: translateY(-1.5rem);
+  transition: 0.5sec;
+}
+.cake-product .cupcake .inner-cake-col img {
+  height: 10rcm;
+  width: 50%;
+  padding: 5px;
+  object-fit: cover;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cake-product .cupcake .inner-cake-col .Cake-Price p {
+  position: absolute;
+  background: grey;
+  color: black;
+}
+
+.cake-product .cupcake .inner-cake-col h2 {
+  padding: 0.5rem 0;
+  color: blue;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+.cake-product .cupcake .inner-cake-col h3 {
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.cake-product .cupcake .inner-cake-col p {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+/*----contact----------------*/
+
+.contact {
+  padding-top: 8.5rem;
+}
+.cake-contact {
+  width: 100%;
+  background: black;
+}
+.cake-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cake-contact-col {
+  margin: 2rem;
+  flex: 1 1 20rem;
+  text-align: center;
+}
+.cake-contact-col .imgs {
+  border: 1px solid white;
+}
+.cake-contact-col img {
+  width: 90%;
+  height: auto;
+  margin: 1.5rem;
+  padding: 1rem;
+  flex: 1 1 21rem;
+  border-radius: 1rcm;
+}
+.cake-contact-col h1 {
+  padding: 1rem 0;
+  color: violet;
+  letter-spacing: 0.1rem;
+}
+.cake-contact-col .social i {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 1rem;
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+}
+.cake-contact-col .social i :hover {
+  background: green;
+  color: white;
+  transition: 0.5s ease;
+}
+.cake-contact-col p {
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
+  color: grey;
+}
+
+.cake-contact-col input,
+.cake-contact-col textarea {
+  width: 80%;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border: none;
+  border-bottom: 0.1rem dotted red;
+}
+.copyright {
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: grey;
+  align-items: center;
+}
